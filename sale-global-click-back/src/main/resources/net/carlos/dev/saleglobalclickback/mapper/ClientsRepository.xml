@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="net.carlos.dev.saleglobalclickback.repository.ClientsRepository">
+    <resultMap id="BaseResultMap" type="net.carlos.dev.saleglobalclickback.entities.Clients">
+        <!--@JPA.Support generated on 2024-10-13 22:18:30.-->
+        <!--@Table clients-->
+        <id column="id_client" jdbcType="OTHER" property="idClient"/>
+        <result column="name_client" jdbcType="VARCHAR" property="nameClient"/>
+        <result column="last_name_client" jdbcType="VARCHAR" property="lastNameClient"/>
+        <result column="address" jdbcType="VARCHAR" property="address"/>
+        <result column="birthdate" jdbcType="DATE" property="birthdate"/>
+        <result column="id_user" jdbcType="OTHER" property="idUser"/>
+    </resultMap>
+    <sql id="Base_Column_List">
+        <!--@JPA.Support generated on 2024-10-13 22:18:30.-->
+        id_client, name_client, last_name_client, address, birthdate, id_user
+    </sql>
+</mapper>

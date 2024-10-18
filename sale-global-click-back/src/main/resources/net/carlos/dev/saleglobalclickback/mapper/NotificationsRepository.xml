@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="net.carlos.dev.saleglobalclickback.repository.NotificationsRepository">
+    <resultMap id="BaseResultMap" type="net.carlos.dev.saleglobalclickback.entities.Notifications">
+        <!--@JPA.Support generated on 2024-10-13 22:18:32.-->
+        <!--@Table notifications-->
+        <id column="id_notification" jdbcType="OTHER" property="idNotification"/>
+        <result column="message" jdbcType="VARCHAR" property="message"/>
+        <result column="date_notification" jdbcType="TIMESTAMP" property="dateNotification"/>
+        <result column="read_notification" jdbcType="VARCHAR" property="readNotification"/>
+        <result column="id_user" jdbcType="OTHER" property="idUser"/>
+    </resultMap>
+    <sql id="Base_Column_List">
+        <!--@JPA.Support generated on 2024-10-13 22:18:32.-->
+        id_notification, message, date_notification, read_notification, id_user
+    </sql>
+</mapper>

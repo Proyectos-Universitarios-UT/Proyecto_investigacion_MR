@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="net.carlos.dev.saleglobalclickback.repository.ReviewsRepository">
+    <resultMap id="BaseResultMap" type="net.carlos.dev.saleglobalclickback.entities.Reviews">
+        <!--@JPA.Support generated on 2024-10-13 22:18:35.-->
+        <!--@Table reviews-->
+        <id column="id_review" jdbcType="OTHER" property="idReview"/>
+        <result column="comment_review" jdbcType="VARCHAR" property="commentReview"/>
+        <result column="rate" jdbcType="INTEGER" property="rate"/>
+        <result column="date_review" jdbcType="TIMESTAMP" property="dateReview"/>
+        <result column="id_seller" jdbcType="OTHER" property="idSeller"/>
+    </resultMap>
+    <sql id="Base_Column_List">
+        <!--@JPA.Support generated on 2024-10-13 22:18:35.-->
+        id_review, comment_review, rate, date_review, id_seller
+    </sql>
+</mapper>

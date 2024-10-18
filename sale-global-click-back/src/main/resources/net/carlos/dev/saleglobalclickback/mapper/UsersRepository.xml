@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="net.carlos.dev.saleglobalclickback.repository.UsersRepository">
+    <resultMap id="BaseResultMap" type="net.carlos.dev.saleglobalclickback.entities.Users">
+        <!--@JPA.Support generated on 2024-10-13 22:18:36.-->
+        <!--@Table users-->
+        <id column="id_user" jdbcType="OTHER" property="idUser"/>
+        <result column="name_user" jdbcType="VARCHAR" property="nameUser"/>
+        <result column="email" jdbcType="VARCHAR" property="email"/>
+        <result column="phone" jdbcType="VARCHAR" property="phone"/>
+        <result column="role" jdbcType="VARCHAR" property="role"/>
+        <result column="date_register" jdbcType="TIMESTAMP" property="dateRegister"/>
+    </resultMap>
+    <sql id="Base_Column_List">
+        <!--@JPA.Support generated on 2024-10-13 22:18:36.-->
+        id_user, name_user, email, phone, `role`, date_register
+    </sql>
+</mapper>

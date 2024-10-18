@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="net.carlos.dev.saleglobalclickback.repository.LocationsRepository">
+    <resultMap id="BaseResultMap" type="net.carlos.dev.saleglobalclickback.entities.Locations">
+        <!--@JPA.Support generated on 2024-10-13 22:18:31.-->
+        <!--@Table locations-->
+        <id column="id_location" jdbcType="OTHER" property="idLocation"/>
+        <result column="latitude" jdbcType="DOUBLE" property="latitude"/>
+        <result column="length" jdbcType="DOUBLE" property="length"/>
+        <result column="date_location" jdbcType="TIMESTAMP" property="dateLocation"/>
+        <result column="id_seller" jdbcType="OTHER" property="idSeller"/>
+    </resultMap>
+    <sql id="Base_Column_List">
+        <!--@JPA.Support generated on 2024-10-13 22:18:31.-->
+        id_location, latitude, `length`, date_location, id_seller
+    </sql>
+</mapper>

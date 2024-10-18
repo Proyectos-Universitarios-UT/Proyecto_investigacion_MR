@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="net.carlos.dev.saleglobalclickback.repository.OrdersRepository">
+    <resultMap id="BaseResultMap" type="net.carlos.dev.saleglobalclickback.entities.Orders">
+        <!--@JPA.Support generated on 2024-10-13 22:18:33.-->
+        <!--@Table orders-->
+        <id column="id_orders" jdbcType="OTHER" property="idOrders"/>
+        <result column="date_order" jdbcType="TIMESTAMP" property="dateOrder"/>
+        <result column="state_order" jdbcType="VARCHAR" property="stateOrder"/>
+        <result column="value_order" jdbcType="NUMERIC" property="valueOrder"/>
+        <result column="id_client" jdbcType="OTHER" property="idClient"/>
+    </resultMap>
+    <sql id="Base_Column_List">
+        <!--@JPA.Support generated on 2024-10-13 22:18:33.-->
+        id_orders, date_order, state_order, value_order, id_client
+    </sql>
+</mapper>

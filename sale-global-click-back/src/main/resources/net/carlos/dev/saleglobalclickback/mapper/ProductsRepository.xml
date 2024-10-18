@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="net.carlos.dev.saleglobalclickback.repository.ProductsRepository">
+    <resultMap id="BaseResultMap" type="net.carlos.dev.saleglobalclickback.entities.Products">
+        <!--@JPA.Support generated on 2024-10-13 22:18:34.-->
+        <!--@Table products-->
+        <id column="id_products" jdbcType="OTHER" property="idProducts"/>
+        <result column="name_product" jdbcType="VARCHAR" property="nameProduct"/>
+        <result column="description" jdbcType="VARCHAR" property="description"/>
+        <result column="price" jdbcType="NUMERIC" property="price"/>
+        <result column="image_url" jdbcType="VARCHAR" property="imageUrl"/>
+        <result column="date_register" jdbcType="TIMESTAMP" property="dateRegister"/>
+        <result column="id_seller" jdbcType="OTHER" property="idSeller"/>
+        <result column="id_category" jdbcType="OTHER" property="idCategory"/>
+    </resultMap>
+    <sql id="Base_Column_List">
+        <!--@JPA.Support generated on 2024-10-13 22:18:34.-->
+        id_products, name_product, description, price, image_url, date_register, id_seller, id_category
+    </sql>
+</mapper>

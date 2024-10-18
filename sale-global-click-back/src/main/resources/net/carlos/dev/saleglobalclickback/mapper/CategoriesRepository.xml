@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="net.carlos.dev.saleglobalclickback.repository.CategoriesRepository">
+    <resultMap id="BaseResultMap" type="net.carlos.dev.saleglobalclickback.entities.Categories">
+        <!--@JPA.Support generated on 2024-10-13 22:18:29.-->
+        <!--@Table categories-->
+        <id column="id_category" jdbcType="OTHER" property="idCategory"/>
+        <result column="name_category" jdbcType="VARCHAR" property="nameCategory"/>
+        <result column="description" jdbcType="VARCHAR" property="description"/>
+    </resultMap>
+    <sql id="Base_Column_List">
+        <!--@JPA.Support generated on 2024-10-13 22:18:29.-->
+        id_category, name_category, description
+    </sql>
+</mapper>
